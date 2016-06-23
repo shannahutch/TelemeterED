@@ -8,7 +8,7 @@ def hello():
 
 @app.route('/<portal>')
 def portal(portal):
-  return "STEM Portal for microscope !".format(name)
+  return "STEM Portal for microscope !".format(portal)
 
 if __name__ == '__main__':
     app.run()
