@@ -1,5 +1,10 @@
+import os
 from flask import Flask
+
 app = Flask(__name__)
+app.config.from_onbject(os.environ['APP_SETTINGS'])
+# check that it is detecting the correct environ
+print(os.environ['APP_SETTINGS'])
 
 
 @app.route('/')
