@@ -3,12 +3,12 @@ from sqlalchemy.dialects.postgresql import JSON
 
 
 class Video(db.Model):
-    __tablename__ = 'video'
+    __tablename__ = 'videos'
 
     id = db.Column(db.Integer, primary_key=True)
     url = db.Column(db.String())
     record_date = db.Column(db.DateTime)
-    class_team = db.Column(db.Strin(50))
+    class_team = db.Column(db.String(50))
     slide_summary = db.Column(db.String(300))
     teacher = db.Column(db.String(50))
 
