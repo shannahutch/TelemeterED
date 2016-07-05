@@ -2,18 +2,23 @@ from app import db
 from sqlalchemy.dialects.postgresql import JSON
 
 
-class Portal(db.Model):
-    __tablename__ = 'portal'
+class Video(db.Model):
+    __tablename__ = 'video'
 
     id = db.Column(db.Integer, primary_key=True)
-    # url = db.Column(db.String())
-    # result_all = db.Column(JSON)
-    # result_no_stop_words = db.Column(JSON)
+    url = db.Column(db.String())
+    record_date = db.Column(db.DateTime)
+    class_team = db.Column(db.Strin(50))
+    slide_summary = db.Column(db.String(300))
+    teacher = db.Column(db.String(50))
 
-    # def __init__(self, url, result_all, result_no_stop_words):
-    #     self.url = url
-    #     self.result_all = result_all
-    #     self.result_no_stop_words = result_no_stop_words
+    def __init__(self, url, record_date, class_team, slide_summary, teacher):
+        self.url = url
+        self.record_date = record_date
+        self.class_team = class_team
+        self.slide_summary = slide_summary
+        self.teacher = teacher
 
-    # def __repr__(self):
-    #     return '<id {}>'.format(self.id)
+
+    def __repr__(self):
+        return '<id {}>'.format(self.id)
