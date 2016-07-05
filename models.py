@@ -1,4 +1,5 @@
 from app import db
+# I'm not sure I need the next line
 from sqlalchemy.dialects.postgresql import JSON
 
 
