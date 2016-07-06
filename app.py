@@ -20,5 +20,10 @@ def hello():
 def portal(portal):
   return "STEM Portal for microscope !".format(portal)
 
+@app.route("/video_search")
+def index(video_search):
+    return render_template('index.html')
+
+
 if __name__ == '__main__':
     app.run()
