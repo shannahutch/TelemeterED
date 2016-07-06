@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Flask React Tutorial</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/JSXTransformer.js">
-</head>
-<body>
-     <div id="mount-point"></div>
-</body>
 
-    <script type="text/jsx">
-         /*** @jsx React.DOM */
-        var SearchExample = React.createClass({
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <!-- //Why do you need both rect scripts? -->
+    <script src="https://fb.me/react-15.0.1.js"></script>
+    <script src="https://fb.me/react-dom-15.0.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link href="pracReac.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>The GigTank presents TelemeterED</h1>
+    <div id="container"></div>
+    <!-- Will it always be type="text/babel .jsx file to use bable-->
+    <script type="text/babel">
+
+   var SearchExample = React.createClass({
 
     getInitialState: function(){
         return { searchString: '' };
@@ -77,6 +81,7 @@ ReactDOM.render(
     <SearchExample items={ libraries } />,
     document.getElementById('container')
     );
-    </script>
 
+    </script>
+  </body>
 </html>
