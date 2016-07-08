@@ -6,8 +6,9 @@ For the initial setup, you should have some familiarity with the following tools
   • Flask – http://flask.pocoo.org/
   • git/Github – http://try.github.io/levels/1/challenges/1
   • Heroku (basics) – https://devcenter.heroku.com/articles/getting-started-with-python
-  • Python and pip as well.
+  • Python 2.7 and pip as well.
   • Heroku toolbelt - https://toolbelt.heroku.com/
+  • Node Package Manager - npm
   • Webpack - http://webpack.github.io/docs/installation.html
 
 
@@ -35,6 +36,9 @@ $ pip freeze > requirements.txt
 Run basic server then open http://127.0.0.1:5000/
 $ python app.py
 http://localhost:5000/
+
+add npm - 
+$ npm install
 
 add Webpack - 
 $ npm install webpack -g
