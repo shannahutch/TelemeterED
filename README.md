@@ -7,8 +7,9 @@ For the initial setup, you should have some familiarity with the following tools
   • git/Github – http://try.github.io/levels/1/challenges/1
   • Heroku (basics) – https://devcenter.heroku.com/articles/getting-started-with-python
   • Python and pip as well.
-  • Heroku toolbelt -
-  https://toolbelt.heroku.com/
+  • Heroku toolbelt - https://toolbelt.heroku.com/
+  • Webpack - http://webpack.github.io/docs/installation.html
+
 
 $ mkdir flask-by-example && cd flask-by-example
 -Initialize git repo
@@ -34,6 +35,9 @@ $ pip freeze > requirements.txt
 Run basic server then open http://127.0.0.1:5000/
 $ python app.py
 http://localhost:5000/
+
+add Webpack - 
+$ npm install webpack -g
 
 create a Profile and 
 $ touch Procfile
