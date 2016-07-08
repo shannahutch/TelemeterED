@@ -12,10 +12,14 @@ db = SQLAlchemy(app)
 
 import models 
 
-
+# npm build
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('client/app/build/index.html')
+
+@app.route('/app.js')
+def appjs():
+    return render_template('client/app/build/app.js')
 
 # @app.route('/home')
 # def home():
@@ -28,3 +32,4 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+
