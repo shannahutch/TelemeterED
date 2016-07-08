@@ -17,13 +17,13 @@ import models
 def index():
     return render_template('index.html')
 
-@app.route('/home')
-def home():
-    return render_template('home.html')
+# @app.route('/home')
+# def home():
+#     return render_template('home.html')
 
-@app.route('/<portal>')
-def portal(portal):
-    return "STEM Portal for microscope !".format(portal)
+# @app.route('/<portal>')
+# def portal(portal):
+#     return "STEM Portal for microscope !".format(portal)
 
 
 if __name__ == '__main__':
