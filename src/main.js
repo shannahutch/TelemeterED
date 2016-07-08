@@ -4,7 +4,7 @@ import App from './modules/App'
 render(<App/>, document.getElementById('app'))
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import About from './modules/About'
-import Repos from './modules/Repos'
+import Search from './modules/Search'
 import Home from './modules/Home'
 
 
@@ -15,9 +15,8 @@ render((
       <IndexRoute component={Home}/>
 
       {/* add the routes here */}
-      <Route path="/repos" component={Repos}>
-        <Route path="/repos/:userName/:repoName" component={Repo}/>
-      </Route>
+      <Route path="/search" component={Search}/>
+        
       <Route path="/about" component={About}/>
     </Route>
   </Router>

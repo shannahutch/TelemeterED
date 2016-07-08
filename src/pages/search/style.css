@@ -1,0 +1,27 @@
+p {
+  background-color: #00ff99;
+}
+
+#facebook {
+  background-color: #ffff80;
+}
+
+body {
+  background-color:  #94b8b8;
+}
+
+h1 {
+  background-color: #00cc99;
+  text-align: center;
+}
+
+input {
+    text-align: center;
+    width: 175px;
+    height: 25px;
+    font-size: large;
+}
+
+ul {
+  list-style: none;
+}
