@@ -13,7 +13,7 @@ export default class Search extends React.Component {
       <div className={styles.content}>
         <h1 className={styles.heading}>Search</h1>
         <p className={styles.lead}>Find your 4k video</p>
-        <button className={styles.signUpButton} onClick={this.signUp}>Sign up</button>
+        <button className={styles.signUpButton} onClick={this.signUp}>Search</button>
       </div>
     );
   }
