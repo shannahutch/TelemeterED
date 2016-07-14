@@ -8,6 +8,7 @@ export default class HomePage extends React.Component {
       <div className={styles.content}>
         <h1>About US</h1>
         <p className={styles.welcomeText}>Coming Soon</p>
+        
       </div>
     );
   }

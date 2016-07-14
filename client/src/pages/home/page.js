@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.css";
-
+import { Link } from 'react-router'
 
 export default class Home extends React.Component {
   
@@ -9,10 +9,7 @@ export default class Home extends React.Component {
       <div className={styles.content}>
         <h1>Landing</h1>
         <p className={styles.welcomeText}>Landing</p>
-        <div className="wrapper">
-          <div className="navbar">
-          </div>
-        </div>
+        <Image src={'http://pugholdit.herokuapp.com/500x400.jpg'} aspectRatio={0.8} />
       </div>
     );
   }

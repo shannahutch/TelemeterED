@@ -12,6 +12,7 @@ class Video(db.Model):
     class_team = db.Column(db.String(50))
     slide_summary = db.Column(db.String(300))
     teacher = db.Column(db.String(50))
+    title = db.Column(db.String(50))
 
     def __init__(self, url, record_date, class_team, slide_summary, teacher):
         self.url = url
@@ -19,6 +20,11 @@ class Video(db.Model):
         self.class_team = class_team
         self.slide_summary = slide_summary
         self.teacher = teacher
+        self.title = title
+# To Run migrations 
+# $ python manage.py db migrate
+# Apply to db
+# $ python manage.py db upgrade
 
 
     def __repr__(self):
