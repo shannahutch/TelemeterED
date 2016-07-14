@@ -9,7 +9,6 @@ export default class Home extends React.Component {
       <div className={styles.content}>
         <h1>Landing</h1>
         <p className={styles.welcomeText}>Landing</p>
-        <Image src={'http://pugholdit.herokuapp.com/500x400.jpg'} aspectRatio={0.8} />
       </div>
     );
   }
