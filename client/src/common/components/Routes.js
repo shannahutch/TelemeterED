@@ -13,7 +13,7 @@ export default (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="search" component={Search} />
-    <Route path="about" component={AboutUs} />
+    <Route path="about" component={About} />
     <Route path="portal" component={Portal} />
     <Route path="acknowledgements" component={Acknowledgements} />
     <Route path="search" component={Search} />

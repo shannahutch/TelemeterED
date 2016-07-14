@@ -4,7 +4,7 @@ import styles from './style.css';
 
 
 export default class Search extends React.Component {
-  getInitialState() {
+  setState() {
     return {value: 'Search!'};
   }
 
@@ -14,7 +14,7 @@ export default class Search extends React.Component {
 
   render() {
     return (
-      <input type="text"  value={this.value} onChange={this.handleChange} placeholder="Type here" />
+      <input type="text"  value={this.value} onChange={this.handleChange} placeholder="Search" />
     );
   }
 }
