@@ -9,8 +9,13 @@ export default class Home extends React.Component {
       <div className={styles.content}>
         <h1>Landing</h1>
         <p className={styles.welcomeText}>Landing</p>
-        
+        <div className="wrapper">
+          <div className="navbar">
+          </div>
+        </div>
       </div>
     );
   }
 }
+
+              

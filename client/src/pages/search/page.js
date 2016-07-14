@@ -4,17 +4,17 @@ import styles from './style.css';
 
 
 export default class Search extends React.Component {
-  signUp() {
-    browserHistory.push('/home');
+  getInitialState() {
+    return {value: 'Search!'};
   }
-  
+
+  handleChange(event) {
+    return {value: event.target.value};
+  }
+
   render() {
     return (
-      <div className={styles.content}>
-        <h1 className={styles.heading}>Search</h1>
-        <p className={styles.lead}>Find your 4k video</p>
-        <button className={styles.signUpButton} onClick={this.signUp}>Search</button>
-      </div>
+      <input type="text"  value={this.value} onChange={this.handleChange} placeholder="Type here" />
     );
   }
 }
