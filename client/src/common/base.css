@@ -14,6 +14,10 @@ h1 {
   color: #F97F85;
 }
 
+h2 {
+  color: #008000;
+}
+
 :global(#container) {
   width: 100%;
 

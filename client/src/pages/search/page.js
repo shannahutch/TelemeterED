@@ -28,13 +28,14 @@ export default class Search extends React.Component {
     render() {
         return (
             <div className="slds-form-element">
-                <div className="slds-form-element__control search-bar">
-                    <input className="slds-input"
+                <div className="search">
+                    <input className="searchVideo"
                            type="search"
                            placeholder="Video Search"
                            value={this.props.searchKey}
                            onChange={this.searchKeyChangeHandler.bind(this)}/>
                 </div>
+                <iframe width="1440" height="601" src="https://www.youtube.com/embed/6pxRHBw-k8M" frameborder="0" allowfullscreen></iframe>
             </div>
         );
     }
