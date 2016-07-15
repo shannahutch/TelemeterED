@@ -10,15 +10,15 @@ export default class Search extends React.Component {
         this.props.onChange(searchKey);
     }
 
-    componentDidMount() {
-    this.serverRequest = $.get(this.props.source, function (result) {
-      var videoData = result[0];
-      this.setState({
-        title: videoData.title,
-        url: videoData.url
-      });
-    }.bind(this));
-  }
+  //   componentDidMount() {
+  //   this.serverRequest = $.get(this.props.source, function (result) {
+  //     var videoData = result[0];
+  //     this.setState({
+  //       title: videoData.title,
+  //       url: videoData.url
+  //     });
+  //   }.bind(this));
+  // }
 
     clearText() {
         this.setState({searchKey: ""});
@@ -35,7 +35,7 @@ export default class Search extends React.Component {
                            value={this.props.searchKey}
                            onChange={this.searchKeyChangeHandler.bind(this)}/>
                 </div>
-                <iframe width="1440" height="601" src="https://www.youtube.com/embed/6pxRHBw-k8M" frameborder="0" allowfullscreen></iframe>
+                <iframe width="700" height="601" src="https://www.youtube.com/embed/6pxRHBw-k8M" frameBorder="0" allowFullScreen></iframe>
             </div>
         );
     }
