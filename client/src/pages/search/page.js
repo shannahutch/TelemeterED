@@ -4,12 +4,12 @@ import styles from './style.css';
 
 
 export default class Search extends React.Component {
-  setState () {
-    return {
-      title: '',
-      url: ''
-    };
-  }
+  // setState () {
+  //   return {
+  //     title: '',
+  //     url: ''
+  //   };
+  // }
   
   searchKeyChangeHandler(event) {
         let searchKey = event.target.value;

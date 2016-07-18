@@ -39,9 +39,87 @@ p, h3, h2, h1, a {
   z-index: 1;
 }
 
+.navbar ul {
+  margin: auto;
+  width: 960px;
+  list-style-type: none;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.navbar li {
+  float: left;
+  /*width: 25%;*/
+}
+
+.navbar li a {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12pt;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar img {
+  margin: 0px 0px -3px 5px;
+}
+
+.navbar li a:hover {
+  background-color: #fafafa;
+  color: #00ced1;
+} 
+
+.masthead {
+  /*background: url(pictures/chattanooga_web.png) no-repeat center center fixed;*/
+  background-color: green;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 640px;
+  margin: auto;
+}
+
+.overlay{ 
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 300px;
+  height: 300px;
+}
+
+.textoverlay{
+  margin: auto;
+  height: 120px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 15pt;
+  width: 70%;
+  border-radius: 10px;
+  font-weight: 200;
+  background-color: rgba(23, 23, 23, 0.7);
+}
+
+.content {
+  padding-top: 15px;
+  background-color: #ffffff;
+  width: 960px;
+  height: 100%;  
+  margin: auto;
+
+}
+
+.content2 {
+  /*background: url(pictures/chattanooga_web.png) no-repeat center center fixed;*/
+  width: 100%;
+  position: relative;
+  height: 640px;
+  margin: auto;
+}
+
 .formHead {
   font-size: 17px;
   color: #008000;
 }
-
-
